@@ -12,30 +12,30 @@ result:
 ```
 apt-get clean
 apt-get update
-aptitude safe-upgrade
+apt-get upgrade
 ```
 
 command:
 ```
-pacman -S iceweasel fluxbox
+pacman -S firefox fluxbox
 ```
 
 result:
 ```
-aptitude install iceweasel fluxbox
+apt-get install firefox fluxbox
 ```
 
 command:
 ```
-pacman -Scyu iceweasel fluxbox
+pacman -Scyu firefox fluxbox
 ```
 
 result:
 ```
 apt-get clean
 apt-get update
-aptitude safe-upgrade
-aptitude install iceweasel fluxbox
+apt-get upgrade
+apt-get install firefox fluxbox
 ```
 
 command:
@@ -55,7 +55,7 @@ pacman -Rs fluxbox
 
 result:
 ```
-aptitude remove fluxbox
+apt-get remove fluxbox
 ```
 
 command:
@@ -65,7 +65,7 @@ pacman -Rcs fluxbox
 
 result:
 ```
-aptitude purge fluxbox
+apt-get remove --purge fluxbox
 ```
 
 command:
@@ -100,5 +100,5 @@ apt-cache search fluxbox
 
 LICENSE
 =======
-GPL
+GPLv3
 
